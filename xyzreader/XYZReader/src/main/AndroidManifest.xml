@@ -24,8 +24,9 @@
         </activity>
 
         <activity
-            android:name=".ui.ArticleDetailActivity"
-            android:parentActivityName=".ui.ArticleListActivity">
+            android:name=".ui.NewArticleDetailActivity"
+            android:parentActivityName=".ui.ArticleListActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -43,6 +44,9 @@
             android:authorities="com.example.xyzreader"
             android:exported="false" />
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="77ba5b87ae86061ca8e22ca97744f5ce67206daa" />
     </application>
 
 </manifest>
